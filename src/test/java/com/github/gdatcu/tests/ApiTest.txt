@@ -1,0 +1,16 @@
+Test: Verifică preluarea unui "todo" item și validarea titlului
+
+-- ARRANGE --
+1. Încarcă fișierul de configurare 'app.yaml'.
+2. Extrage valoarea 'baseUrl' din configurație.
+3. Construiește endpoint-ul specific: "/todos/1".
+4. Definește URL-ul complet combinând baseUrl și endpoint.
+
+-- ACT --
+5. Trimite un request de tip GET la URL-ul complet.
+6. Stochează răspunsul primit de la server.
+
+-- ASSERT --
+7. Verifică dacă status code-ul din răspuns este 200 (OK).
+8. Verifică dacă răspunsul (body-ul JSON) conține o cheie numită "title".
+9. Verifică dacă valoarea cheii "title" nu este goală sau null.

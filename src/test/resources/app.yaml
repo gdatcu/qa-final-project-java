@@ -1,0 +1,10 @@
+# Fișier de configurare pentru mediul de testare
+env: "staging"
+
+service:
+  name: "JsonPlaceholder API"
+  baseUrl: "https://jsonplaceholder.typicode.com"
+
+timeouts:
+  connect: 5000   # 5 secunde
+  read: 10000     # 10 secunde
